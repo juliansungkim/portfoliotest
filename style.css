@@ -24,6 +24,63 @@ header {
   }
 
 
+a {
+  outline: none;
+  text-decoration: none;
+  color: rgb(47, 63, 80);
+}
+   
+
+  
+a:visited {
+  color:  rgb(86, 108, 133);
+}
+  
+a:hover {
+  color: #E63946;
+}
+
+a#green:hover {
+  color: #9BC53D;
+}
+
+a#yell:hover {
+  color: #E9C46A;
+}
+
+a#Teal:hover {
+  color: #2A9D8F;
+}
+
+a#orange:hover {
+  color: #E5446D;
+}
+
+a#pink:hover {
+  color: #E56399;
+}
+
+
+
+
+
+
+
+
+
+a:focus {
+  
+}
+  
+
+  
+a:active {
+  
+}
+
+
+
+
 @import url(https://fonts.googleapis.com/css?family=Lato:100,300,400);
 
 input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
@@ -104,8 +161,9 @@ input:hover:focus::-ms-placeholder, textarea:hover::focus:-ms-placeholder {
 #form {
   position: relative;
   width: 500px;
-  margin: auto auto 100px 100px;
+  margin: auto auto 100px 60px;
   float: left;
+  max-width: 5%;
 }
 
 input {
@@ -181,9 +239,6 @@ textarea:hover {
   color: #e2dedb;
 }
 
-
-
-
 p {
     font-family: "Open Sans";
     color: rgb(47, 63, 80);
@@ -191,7 +246,7 @@ p {
 }
 
 span {
-    font-size: 20px;
+    font-size: 25px;
     font-weight: 900;
 }
 
@@ -202,9 +257,8 @@ h1 {
      line-height: 50px;
      padding-bottom: 50px;
      padding-top: 25px;
-     
-
- }
+  
+}
 
 h2 {
     font-family: "Oswald";
@@ -219,7 +273,6 @@ h3 {
     font-size: 50px;
     color: rgb(47, 63, 80);
     
-    
 }
 
 ul li {
@@ -233,8 +286,6 @@ ul li {
     justify-content: right;
     color: rgb(47, 63, 80);
 }
-
-
 
 .mainlogo {
     max-width: 50%;
@@ -262,7 +313,6 @@ ul li {
     margin-top: 250px;
     padding-bottom: -350px;
     
-
 }
 
 .abtmetxt {
@@ -271,22 +321,53 @@ ul li {
     justify-content: space-around;
 }
 
+.about {
+  padding-bottom: 200px;
+}
+
 .abtmetxt p {
     height: auto;
     width: 65%;
-    font-size: 15px;
+    font-size: 20px;
     font-weight: 600;
 }
 
 .abtmetxt img {
     height: auto;
-    width: 10%;
+    max-width: 10%;
    
-
 }
 
 #subtext {
     font-weight:600;
+}
+
+.personal {
+  padding-top: 200px;
+  padding-bottom: 50px;
+}
+
+.pcontent {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.pcontent img {
+  height: auto;
+  width: 35%;
+  margin-left: 2%;
+  margin-right: 5%;
+}
+
+.pcontent p {
+  width: 60%;
+  height: auto;
+  float: right;
+  margin-right: 10%;
+  margin-top: -50px;
+  font-size: 20px;
+  
 }
 
 .contact {
@@ -300,7 +381,10 @@ ul li {
 
 }
 
-
+#contactmsg {
+  font-size: 20px;
+  margin-left: 250px;
+}
 
 .footer {
     overflow: auto;
